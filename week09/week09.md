@@ -174,8 +174,7 @@ SELECT DISTINCT
   CAST(STRFTIME('%d', OrderDate) AS INTEGER) Day
 FROM [Order] ORDER BY TimeID;
 ```
-<!-- .element: style="font-size:85%" -->
-
+<!-- .element: style="font-size:80%" -->
 - 🤔 Is the hierarchy balanced, unbalanced or ragged?
 
 
