@@ -1,0 +1,127 @@
+erDiagram
+  Supplier {
+    INTEGER SupplierID PK
+    TEXT CompanyName
+    TEXT ContactName
+    TEXT ContactTitle
+    TEXT Address
+    TEXT City
+    TEXT Region
+    TEXT PostalCode
+    TEXT Country
+    TEXT Phone
+    TEXT Fax
+    TEXT HomePage
+  }
+
+  Category {
+    INTEGER CategoryID PK
+    TEXT CategoryName
+    TEXT Description
+  }
+
+  Product {
+    INTEGER ProductID PK
+    TEXT ProductName
+    INTEGER SupplierID FK
+    INTEGER CategoryID FK
+    TEXT QuantityPerUnit
+    REAL UnitPrice
+    INTEGER UnitsInStock
+    INTEGER UnitsOnOrder
+    INTEGER ReorderLevel
+    INTEGER Discontinued
+  }
+
+  Customer {
+    TEXT CustomerID PK
+    TEXT CompanyName
+    TEXT ContactName
+    TEXT ContactTitle
+    TEXT Address
+    TEXT City
+    TEXT Region
+    TEXT PostalCode
+    TEXT Country
+    TEXT Phone
+    TEXT Fax
+  }
+
+  Employee {
+    INTEGER EmployeeID PK
+    TEXT LastName
+    TEXT FirstName
+    TEXT Title
+    TEXT TitleOfCourtesy
+    DATE BirthDate
+    DATE HireDate
+    TEXT Address
+    TEXT City
+    TEXT Region
+    TEXT PostalCode
+    TEXT Country
+    TEXT HomePhone
+    TEXT Extension
+    TEXT Note
+    INTEGER ReportsTo FK
+    TEXT PhotoPath
+  }
+
+  Region {
+    INTEGER RegionID PK
+    TEXT RegionDescription
+  }
+
+  Territory {
+    TEXT TerritoryID PK
+    TEXT TerritoryDescription
+    INTEGER RegionID FK
+  }
+
+  EmployeeTerritory {
+    INTEGER EmployeeID PK,FK
+    TEXT TerritoryID PK,FK
+  }
+
+  Shipper {
+    INTEGER ShipperID PK
+    TEXT CompanyName
+    TEXT Phone
+  }
+
+  Order {
+    INTEGER OrderID PK
+    TEXT CustomerID FK
+    INTEGER EmployeeID FK
+    DATETIME OrderDate
+    DATETIME RequiredDate
+    DATETIME ShippedDate
+    INTEGER ShipVia FK
+    REAL Freight
+    TEXT ShipName
+    TEXT ShipAddress
+    TEXT ShipCity
+    TEXT ShipRegion
+    TEXT ShipPostalCode
+    TEXT ShipCountry
+  }
+
+  OrderDetail {
+    INTEGER OrderID PK,FK
+    INTEGER ProductID PK,FK
+    REAL UnitPrice
+    INTEGER Quantity
+    REAL Discount
+  }
+
+  Supplier |o..o{ Product : supplies
+  Category |o..o{ Product : categorises
+  Customer |o..o{ Order : places
+  Employee |o..o{ Order : handles
+  Shipper  |o..o{ Order : ships_via
+  Order ||--o{ OrderDetail : has_lines
+  Product  ||--o{ OrderDetail : appears_on
+  Region   ||--o{ Territory  : contains
+  Territory ||--o{ EmployeeTerritory : assigned
+  Employee  ||--o{ EmployeeTerritory : assigned
+  Employee |o..o{ Employee : reports_to

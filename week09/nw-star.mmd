@@ -1,0 +1,61 @@
+erDiagram
+  %% ===== Dimension =====
+  Time {
+    INTEGER TimeID PK
+    INTEGER Year
+    TEXT Quarter
+    INTEGER Month
+    INTEGER Day
+    TEXT DayOfWeek
+  }
+
+  Customer {
+    TEXT CustomerID PK
+    TEXT CompanyName
+    TEXT Country
+    TEXT Region
+    TEXT City
+  }
+
+  Product {
+    INTEGER ProductID PK
+    TEXT ProductName
+    TEXT CategoryName
+    TEXT SupplierName
+    REAL UnitPrice
+  }
+
+  Employee {
+    INTEGER EmployeeID PK
+    TEXT EmployeeName
+    TEXT ManagerName
+    TEXT Country
+    TEXT Region
+    TEXT City
+  }
+
+  Shipper {
+    INTEGER ShipperID PK
+    TEXT CompanyName
+  }
+
+  %% ===== Fact =====
+  Sale {
+    INTEGER TimeID PK,FK
+    TEXT    CustomerID PK,FK
+    INTEGER ProductID PK,FK
+    INTEGER EmployeeID PK,FK
+    INTEGER ShipperID PK,FK
+
+    INTEGER QuantitySold
+    REAL    UnitPriceAtSale
+    REAL    Discount
+    REAL    DollarSold
+  }
+
+  %% ===== Relationship =====
+  Time     ||--o{ Sale : "on"
+  Customer ||--o{ Sale : "buys"
+  Product  ||--o{ Sale : "sold_as"
+  Employee ||--o{ Sale : "handled_by"
+  Shipper  ||--o{ Sale : "shipped_via"

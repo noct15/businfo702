@@ -84,7 +84,7 @@
   - Suggest further work and improvement
 
 - Optional: Data visualisation (1% bonus)
-  - Visualise insight with [Python](https://colab.research.google.com/), [Streamlit](https://streamlit.io/), [D3](https://d3js.org/) or any other tool
+  - Visualise insight with [python](https://colab.research.google.com/), [streamlit](https://streamlit.io/), [d3](https://d3js.org/), [mermaid](https://mermaid.js.org) or any other tool
 
 
 
