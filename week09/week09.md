@@ -1,5 +1,5 @@
 # 🗄️ Week 09
-### Measure and Hierarchy
+### Measure and hierarchy
 [©](https://creativecommons.org/licenses/by/4.0) [Johnny Chan](mailto:jh.chan@auckland.ac.nz)
 
 
@@ -22,26 +22,26 @@
 
 ## 🪓 Setup
 
-- Based on the Northwind database, design and develop a data warehouse that tracks all the sale records per customer, product, employee and shipper over time
+- Based on the [Northwind database](nw.sql), design and develop a data warehouse that tracks all the sale records per customer, product, employee and shipper over time
 
 - Implement the Northwind data warehouse using SQLite
 
 
 ## Star schema
+- The [star schema](nw-star.mmd) of the Northwind data warehouse in [mermaid.js](https://mermaid.js.org/syntax/entityRelationshipDiagram.html)
 ![nw-star.png](nw-star.png)
 
 
 ## EL
-- Extract the transformed data required for dimension and fact tables into CSV files
-
-- Create all the required tables in a new SQLite database representing the Northwind data warehouse
-
-- Load the extracted data into the data warehouse
-
 - Examine and execute the [nw-dw.sql](nw-dw.sql) script file to create nw-dw.db
 
-Note: Purposefully this demonstrates a slightly different workflow comparing to ELT. The required tranformation logics are applied during data extraction, and so there is no need for further data transformation
+  - Full-extract the *transformed data* required for dimension and fact tables into corresponding CSV files
 
+  - Create all the required tables in a new SQLite database representing the Northwind data warehouse
+
+  - Full-load the extracted data into the data warehouse SQLite database
+
+Note: Purposefully this demonstrates a slightly different workflow comparing to ELT. The required tranformation logics are applied during data extraction, and so there is no need for further data transformation
 
 
 
@@ -384,7 +384,7 @@ ORDER BY Country, TotalSale DESC;
 
 - Dice: selecting a subset of values from two or more dimensions to produce a smaller cube
 
-- Both slice and dice are non-hierarcical operations; they are filters applied to explore pattern across specific subset of data without changing granularity
+- Both slice and dice are non-hierarchical operations; they are filters applied to explore pattern across specific subset of data without changing the granularity
 
 
 ## Slice and dice with SQL
