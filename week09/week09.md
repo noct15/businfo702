@@ -378,7 +378,7 @@ ORDER BY Country, TotalSale DESC;
 
 
 ## Slice and dice
-- OLAP structures data (i.e. fact) in a multi-dimensional cube
+- OLAP structures data (i.e. fact) in a multi-dimensional [cube](https://en.wikipedia.org/wiki/OLAP_cube)
 
 - Slice: fixing one value of a single dimension to produce a sub-cube
 
