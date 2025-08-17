@@ -157,7 +157,7 @@ Note: If the intention is to use a table filled with externally sourced data imm
 
 
 ## Example
-- Download the [timesData.csv](timesData.csv) file from the [World University Rankings dataset](https://www.kaggle.com/datasets/mylesoneill/world-university-rankings) in Kaggle; create a new SQLite database and import the CSV file to a new temporary table; examine the imported data (e.g. data type, format, unit etc)
+- Download the [timesData.csv](timesData.csv) file that is originally sourced from the [World University Rankings dataset](https://www.kaggle.com/datasets/mylesoneill/world-university-rankings) in Kaggle; create a new SQLite database and import the CSV file to a new temporary table; examine the imported data (e.g. data type, format, unit etc)
 
 ```
 .open uni.db
