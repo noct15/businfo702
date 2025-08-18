@@ -78,7 +78,7 @@ ORDER BY TimeID, CustomerID, ProductID, EmployeeID, ShipperID;
 ## Example
 - Aggregating a stored measure: total sales revenue per year; use the stored measure ```DollarSold```, fast query and no need to recompute each time
 ```
-SELECT Year, ROUND(SUM(s.DollarSold), 2) TotalSale
+SELECT Year, ROUND(SUM(DollarSold), 2) TotalSale
 FROM Sale s JOIN Time t ON s.TimeID = t.TimeID
 GROUP BY Year
 ORDER BY Year;
@@ -259,7 +259,7 @@ YearSubtotal AS (
     ROUND(SUM(DollarSold), 2) TotalSale,
     1 SortLevel, Year SortYear, 'Q5' SortQuarter
   FROM Sale s JOIN Time t ON t.TimeID = s.TimeID
-  GROUP BY t.Year
+  GROUP BY Year
 ),
 GrandTotal AS (
   SELECT NULL Year, NULL Quarter,
