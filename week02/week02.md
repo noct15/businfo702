@@ -56,7 +56,7 @@ NULL | NULL
 - There are specific functions designed to work with literal
 
 
-# ▶️ Demo
+# 📺 Demo
 ### The [book](book.sql) database
 
 
