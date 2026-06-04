@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Week 03</title>
+        <title>My Talk</title>
         <meta charset="utf-8" />
         <meta name="description" content="Presentation" />
         <meta name="author" content="Johnny Chan" />
-
         <meta name="mobile-web-app-capable" content="yes" />
         <meta
             name="mobile-web-app-status-bar-style"
@@ -15,13 +14,13 @@
 
         <link rel="stylesheet" href="../dist/reset.css" />
         <link rel="stylesheet" href="../dist/reveal.css" />
-        <link rel="stylesheet" href="../dist/theme/night.css" id="theme" />
+        <link rel="stylesheet" href="../dist/theme/sky.css" id="theme" />
 
         <!-- Theme used for syntax highlighting of code -->
         <link rel="stylesheet" href="../dist/plugin/highlight/monokai.css" />
 
         <!-- Additional references -->
-        <link rel="icon" href="../asset/image/icon.png" type="image/png" />
+        <link rel="icon" href="../asset/image/bulb.png" type="image/png" />
         <link rel="stylesheet" href="../asset/style/tweak.css" />
     </head>
 
@@ -29,7 +28,7 @@
         <div class="reveal">
             <div class="slides">
                 <section
-                    data-markdown="week03.md"
+                    data-markdown="my-talk.md"
                     data-separator="^\n\n\n"
                     data-separator-vertical="^\n\n"
                     data-separator-notes="^Note:"
@@ -45,6 +44,9 @@
         <script src="../dist/plugin/markdown.js"></script>
         <script src="../dist/plugin/highlight.js"></script>
         <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
             Reveal.initialize({
                 width: 1100,
                 height: 800,
@@ -54,6 +56,7 @@
                 hash: true,
                 transition: "slide",
 
+                // Learn about plugins: https://revealjs.com/plugins/
                 plugins: [
                     RevealZoom,
                     RevealNotes,
