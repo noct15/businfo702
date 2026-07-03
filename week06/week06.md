@@ -24,16 +24,16 @@
 
 
 ## Test specification
-- T1: this 120-minute Inspera-enabled Canvas online test (18:30 to 20:30 NZT on 2025-08-01) is an individual assessment representing 30% of the course
+- T1: this 120-minute Inspera-enabled Canvas online test (18:30 to 20:30 NZT on 2026-08-11) is an individual assessment representing 30% of the course
 <!-- .element: style="font-size:90%" -->
 
 - There are 14 questions in total: 2 questions with ERD and 12 questions with SQL, covering **Week 01 to Week 05** of the course. There are two types of question: multiple answer and essay. For multiple answer typed question, you are expected to select a correct number of correct statements. For essay typed question, you are expected to write words or code to answer them. Partial marks are considered in this assessment. For SQL questions, you may be shown with some sample output only to help you understand the required structure for the output. Ignore the data from the sample output
 <!-- .element: style="font-size:90%" -->
 
-- The assessment will be delivered in [exam mode B](https://www.auckland.ac.nz/en/students/academic-information/exams-and-final-results/about-exams/exam-mode-b.html) together with Canvas, which means you must download and use the [Inspera Integrity Browser (IIB)](https://www.auckland.ac.nz/assets/students/academic-information/exams-and-final-results/online-exams/iib-guides-for-practice-exams-(mode-b)/IIB%20Setup%20(Mode%20B).docx.pdf) during the assessment in Canvas and follow all the instructions associated with mode B. During the test, you must treat it as if you are doing it in-person. Failing to comply would automatically get a zero mark for the test
+- The assessment will be delivered in [exam mode D](https://www.auckland.ac.nz/en/students/academic-information/exams-and-final-results/about-exams/exam-mode-d.html) together with Canvas, which means you must use the [Inspera Integrity Browser (IIB)](https://www.auckland.ac.nz/assets/students/academic-information/exams-and-final-results/about-exams/iib-guides-for-practice-exams-mode-d/iib_setup_mode_d.pdf) during the assessment in Canvas and follow all the provided instructions. During the test, you must treat it as if you are doing a mode D exam. Failing to comply would automatically get a zero mark for the test
 <!-- .element: style="font-size:90%" -->
 
-Note: It is mandatory to read and understand all the instructions and regulations of exam mode B. If you are in doubt what is allowed and what is not allowed, make sure you have your question asked via the discussion forum before the test
+Note: It is mandatory to read and understand all the instructions and regulations of exam mode D. If you are in doubt what is allowed and what is not allowed, make sure you have your question asked via the discussion forum before the test
 
 
 ## More specification
@@ -308,11 +308,11 @@ Germany         4           0
 ## 📝 To do
 - Practice more and get yourself ready for the test
 
-- Attend the workshop; go through the trial test (T0) under mode B and make sure you have everything installed and run in your device
+- Attend the workshop; go through the trial test (T0) and make sure you have everything installed and run in your device
 
 - Explore the [Chinook](../case/chinook.sql) database further to be familiar with it
 
-- Participate in the test (T1) on 2025-08-01 from 18:30-20:30 under mode B via Canvas
+- Participate in the test (T1) on 2026-08-11 from 18:30-20:30 under mode D
 
 
 ## 📚 Reading

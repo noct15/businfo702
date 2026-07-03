@@ -16,7 +16,7 @@
 
 
 ## What is information management
-- Information management (IM) is the appropriate and optimised capture, storage, retrieval, and use of information at a personal level or organisational level
+- Information management (IM) is the appropriate and optimised capture, storage, retrieval and use of information at a personal or organisational level
 
 - IM for organisations concerns a cycle of activity: the acquisition of information from one or more sources, the custodianship and the distribution of that information to those who need it, and its ultimate disposal through archiving or deletion
 
@@ -24,14 +24,14 @@
 
 
 ## Common issues in IM
-- How information is acquired, recorded and stored
-- Where information resources are in the organisation and who is responsible
-- How information flows within and between the organisation and outside
-- How the organisation uses the information
-- How people who handle it apply their skills and cooperate with one another
-- How information technology supports the users of information
-- What information costs and what value does it contribute
-- How effectively all these information-related activities contribute towards the
+- __How__ information is acquired, recorded and stored
+- __Where__ information resources are in the organisation and __who__ is responsible
+- __How__ information flows within and between the organisation and outside
+- __How__ the organisation uses the information
+- __How__ people who handle it apply their skills and cooperate with one another
+- __How__ information technology supports the users of information
+- __What__ information costs and __what__ value does it contribute
+- __How__ effectively all these information-related activities contribute towards the
 achievement of the organisation’s objectives
 
 
@@ -45,17 +45,17 @@ achievement of the organisation’s objectives
 
 
 ## The [DIKW model](https://www.nomos-elibrary.de/10.5771/0943-7444-2019-1-33.pdf)
-![Example of DIKW model](https://s3.amazonaws.com/external_clips/attachments/39914/original/pmIHS_IoT2_Fig2.png?1420841911)
+![Example of DIKW model](dikw-model.png)
 
 <small>Figure 1.1: The DIKW model from [Mannion (2015)](https://electronics360.globalspec.com/article/4890/optimal-analysis-algorithms-are-iot-s-big-opportunity)</small>
 
 
-## The [DIKAR model](https://www.researchgate.net/profile/Amodu-Akeem/publication/357242513_Critical_Overview_of_Information_Management_DIKAR_Model_and_Technology_in_the_21st_Century/links/61c30aeeabcb1b520ad6d2bb/Critical-Overview-of-Information-Management-DIKAR-Model-and-Technology-in-the-21st-Century.pdf)
-![The DIKAR model](https://www.oreilly.com/api/v2/epubs/9781098162818/files/assets/toward_holistic_metadata_management_316852_06.png)
+## The [DIKAR model](https://www.researchgate.net/publication/357242513_Critical_Overview_of_Information_Management_DIKAR_Model_and_Technology_in_the_21st_Century)
+![The DIKAR model](dikar-model-with-gaps.jpg)
 
-<small>Figure 1.2: The DIKAR model from [Olesen-Bagneux (2025)](https://www.oreilly.com/library/view/fundamentals-of-metadata/9781098162818/ch01.html)</small>
+<small>Figure 1.2: The DIKAR model from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:DIKAR_model.jpg)</small>
 
-![Two approaches in DIKAR](https://media.springernature.com/lw685/springer-static/image/chp%3A10.1007%2F978-3-030-32922-8_30/MediaObjects/486132_1_En_30_Fig5_HTML.png)
+![Two approaches in DIKAR](dikar-model-with-approaches.png)
 
 <small>Figure 1.3: The DIKAR model from [Daly (2020)](https://doi.org/10.1007/978-3-030-32922-8_30)</small>
 
@@ -87,8 +87,8 @@ achievement of the organisation’s objectives
 
 	- demonstrate effective use of key data management software and tools
 	- write queries using Structured Query Language [(SQL)](https://en.wikipedia.org/wiki/SQL) to extract data stored in relational databases and data warehouses
-	- plan, design and execute the extract, transform, load [(ETL)](https://en.wikipedia.org/wiki/Extract,_transform,_load) data flows from transactional data stores to a data warehouse
-	- show independent and reflect thinking, considering the [ethical](https://data.govt.nz/toolkit/data-ethics/), regulatory, cultural and social contexts of data and business information management
+	- plan, design and execute the extract, load, transform [(ELT)](https://en.wikipedia.org/wiki/Extract,_load,_transform) data flows from transactional data stores to a data warehouse
+	- show independent and reflect thinking, considering the [ethical](https://data.govt.nz/toolkit/data-ethics), regulatory, cultural and social contexts of data and business information management
 
 
 
@@ -123,7 +123,7 @@ achievement of the organisation’s objectives
 
 - The DBMS [evolution](https://en.wikipedia.org/wiki/Database#History): hierarchical → network → relational → object-oriented → object-relational → NoSQL → NewSQL
 
-- The [most popular DBMS in 2024](https://survey.stackoverflow.co/2024/technology#1-databases) based on the [developer survey](https://survey.stackoverflow.co/2024/) from [Stack Overflow](https://stackoverflow.com/)
+- The [most popular DBMS in 2025](https://survey.stackoverflow.co/2025/technology#1-databases) based on the [developer survey](https://survey.stackoverflow.co/2025) from [Stack Overflow](https://stackoverflow.com)
 
 
 ## What is a relational database?
@@ -326,7 +326,7 @@ Week | Lecture
 05 | Recap
 06 | Test review
 07 | Data warehouse
-08 | Extract, transform & load
+08 | Extract, load & transform
 09 | Measure & hierarchy
 10 | Course review
 
