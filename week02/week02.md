@@ -79,9 +79,9 @@ CREATE TABLE Author
 
 
 ## Naming convention
-- Must begin with a letter
-- Can be 1–30 characters long
-- Must contain only A–Z, a–z, 0–9, _, $, and #
+- Singular noun
+- Self-explanatory and simple word
+- PascalCase, camelCase or snake_case
 - Must not duplicate the name of another database object of the same user
 - Must not be a [reserved word](https://www.sqlite.org/lang_keywords.html)
 
@@ -690,13 +690,9 @@ staffCode   weeks
 
 - Further
 	- [SQL supported in SQLite](http://www.sqlite.org/lang.html)
-
 	- [Expression and operator in SQLite](https://sqlite.org/lang_expr.html)
-
 	- [Datatype in SQLite](https://www.sqlite.org/datatype3.html)
-
 	- [Core function in SQLite](https://www.sqlite.org/lang_corefunc.html)
-
 	- [Date and time function in SQLite](http://www.sqlite.org/lang_datefunc.html)
 
 
@@ -710,7 +706,7 @@ Week | Lecture
 05 | Recap
 06 | Test review
 07 | Data warehouse
-08 | Extract, transform & load
+08 | Extract, load & transform
 09 | Measure & hierarchy
 10 | Course review
 

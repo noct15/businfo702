@@ -6,7 +6,7 @@
 
 ## 🕒 Previously ...
 
-- ETL and ELT
+- ELT and ETL
 
 - ELT and SQLite
 
@@ -145,8 +145,8 @@ GROUP BY Year;
 - A hierarchy describes levels of granularity within a dimension, allowing user to drill-down or roll-up the data. Common examples include time (Year → Quarter → Month → Day), product (Category → Sub‑category → Product) and geography (Country → State → City)
 
 - Hierarchies support two common OLAP operations:
-  - Roll‑up: aggregate from lower level to higher level (e.g. Sale in Auckland → Sale in New Zealand)
-  - Drill‑down: navigate from a higher level to a lower level (e.g. Sale in 2024 → Sale in January 2024)
+  - Roll‑up: aggregate from lower level to higher level (e.g. Sale in Auckland → Sale in New Zealand)
+  - Drill‑down: navigate from a higher level to a lower level (e.g. Sale in 2024 → Sale in January 2024)
 
 - Hierarchies can be balanced (all branches have the same number of levels), unbalanced (some branches have more levels than others) or ragged (some levels may be skipped)
   - Further: [Hierarchies in dimensional modelling](https://www.ibm.com/docs/en/ida/9.1.2?topic=models-hierarchies)
@@ -491,7 +491,7 @@ Week | Lecture
 05 | Recap ✓
 06 | Test review ✓
 07 | Data warehouse ✓
-08 | Extract, transform & load ✓
+08 | Extract, load & transform ✓
 09 | Measure & hierarchy ✓
 10 | Course review
 

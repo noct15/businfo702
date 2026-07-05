@@ -30,7 +30,7 @@ Week | Lecture
 05 | Recap ✓
 06 | Test review ✓
 07 | Data warehouse ✓
-08 | Extract, transform & load ✓
+08 | Extract, load & transform ✓
 09 | Measure & hierarchy ✓
 10 | Course review ✓
 
@@ -159,8 +159,48 @@ WHERE prompt = 'Write a tagline for a course
 
 
 
+## Beyond: DuckDB
+- [DuckDB](https://duckdb.org/) is a free, open-source analytical database that runs entirely on your laptop with no server required — similar to SQLite in that sense, but built for a different purpose
+
+- Where SQLite is optimised for transactional workloads (OLTP), DuckDB is optimised for analytical queries (OLAP). It stores data in a column-store format that makes aggregation over large datasets very fast
+
+- It is not a replacement for SQLite; it is a complement. Think of SQLite as the right tool for the transactional foundation this course has built, and DuckDB as a natural next step if you need to run analytics at scale
+
+- DuckDB can also read CSV files directly without any import command, and it supports standard SQL
+
+📚 Further: [DuckDB documentation](https://duckdb.org/docs/stable/api/cli/overview)
+
+
+## Beyond: DuckDB
+- The same OLAP operations from week 09 become simpler in DuckDB. For example, roll-up:
+
+```sql
+-- In SQLite: requires three CTEs and a UNION ALL to produce subtotals
+-- In DuckDB: one clause does it all
+SELECT Year, Quarter, ROUND(SUM(DollarSold), 2) TotalSale
+FROM Sale s JOIN Time t ON s.TimeID = t.TimeID
+GROUP BY ROLLUP(Year, Quarter)
+ORDER BY Year NULLS LAST, Quarter NULLS LAST;
+```
+<!-- .element: style="font-size:85%" -->
+
+- And pivot:
+
+```sql
+-- In SQLite: requires a CASE WHEN column for every value
+-- In DuckDB: the PIVOT statement infers values from the data
+PIVOT (SELECT Country, Year, DollarSold FROM Sale s
+       JOIN Customer c ON s.CustomerID = c.CustomerID
+       JOIN Time t ON s.TimeID = t.TimeID)
+ON Year USING ROUND(SUM(DollarSold), 2)
+GROUP BY Country ORDER BY Country;
+```
+<!-- .element: style="font-size:85%" -->
+
+- These are optional extensions to what you have learnt. DuckDB is not assessed in this course
+
+
 ## Beyond: More
-- SQL for analytics: [DuckDB](https://duckdb.org/)
 - Graph database: [Neo4j](https://neo4j.com/)
 - Vector database: [Chroma](https://www.trychroma.com/)
 
@@ -192,7 +232,7 @@ Week | Lecture
 05 | Recap ✓
 06 | Test review ✓
 07 | Data warehouse ✓
-08 | Extract, transform & load ✓
+08 | Extract, load & transform ✓
 09 | Measure & hierarchy ✓
 10 | Course review ✓
 

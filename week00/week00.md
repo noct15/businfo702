@@ -27,7 +27,7 @@ Note: Students could get support from Rohan Willis of the Business Communication
 	- A 2-hr lab session
 
 - Working on your own
-	- No less than 15 hours per week (reading, practising, working on assessment and more)
+	- No less than 11 hours per week (reading, practising, working on assessment and more)
 	- Knowledge → Understanding → Skill
 
 
@@ -42,8 +42,7 @@ Note: Students could get support from Rohan Willis of the Business Communication
 - TUT1-4: due on Week 07 Thu 23:59 (10%)
 - Project Proposal: due on Week 08 Thu 23:59 (3%)
 - Project Report: due on Week 10 Thu 23:59 (27%)
-
-📢 There is no exam in this course
+- 📢 There is no exam in this course
 
 
 
@@ -53,7 +52,7 @@ Note: Students could get support from Rohan Willis of the Business Communication
   - You must take full responsibility of the output from the tool (for assignments, tutorials and project)
   - You must provide an additional appendix document with a complete log of your checks and balances done with the outputs from the tool (for project only)
 
-📢 No generative AI tool is allowed for the test; please be aware of the [advice on using generative AI tool](https://www.auckland.ac.nz/en/students/forms-policies-and-guidelines/student-policies-and-guidelines/academic-integrity-copyright/advice-for-student-on-using-generative-ai.html) and [breaches of academic integrity](https://www.auckland.ac.nz/en/students/forms-policies-and-guidelines/student-policies-and-guidelines/academic-integrity-copyright/Breaches-of-academic-integrity.html)
+- 📢 No generative AI tool is allowed for the test; please be aware of the [advice on using generative AI tool](https://www.auckland.ac.nz/en/students/forms-policies-and-guidelines/student-policies-and-guidelines/academic-integrity-copyright/advice-for-student-on-using-generative-ai.html) and [breaches of academic integrity](https://www.auckland.ac.nz/en/students/forms-policies-and-guidelines/student-policies-and-guidelines/academic-integrity-copyright/Breaches-of-academic-integrity.html)
 
 Note: Generally speaking, this course supports the use of generative AI tool for students to enhance their learning experience, with the hope that they could improve the learning efficiency, effectiveness and knowledge retention rate. Even for the assignments, we are happy for students to use generative AI tool to help them with their work, as long as they follow the rules and guidelines set by the university and the course, so that they are using the tool in a responsible and ethical manner. For the test, we DO NOT ALLOW the use of generative AI tool, as we want to ensure that students are able to demonstrate their own understanding and skill built from the knowledge they gain from the course material.
 
@@ -69,7 +68,7 @@ Week | Lecture | Lab
 05 | Recap | Recap
 06 | Test review | Workshop
 07 | Data warehouse	 | Data warehouse
-08 | Extract, transform & load	 | Extract, transform & load
+08 | Extract, load & transform	 | Extract, load & transform
 09 | Measure & hierarchy	 | SQL advanced
 10 | Course review | Workshop
 
@@ -82,7 +81,7 @@ Week | Lecture | Lab
 
 - Reading: There is no textbook nor course book. Most readings for this course could be accessed online via [Talis reading lists](https://auckland.rl.talis.com/courses/businfo702.html)
 
-- Software: [Draw.io](https://www.drawio.com), [SQLite](http://sqlite.org), [VS Code](https://code.visualstudio.com) and [DuckDB](https://duckdb.org)
+- Software: [Draw.io](https://www.drawio.com), [SQLite](http://sqlite.org), [VS Code](https://code.visualstudio.com) and [Inspera Integrity Browser (IIB)](https://www.auckland.ac.nz/assets/students/academic-information/exams-and-final-results/about-exams/iib-guides-for-practice-exams-mode-d/iib_setup_mode_d.pdf)
 
 
 

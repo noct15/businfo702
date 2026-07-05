@@ -513,7 +513,7 @@ Week | Lecture
 05 | Recap
 06 | Test review
 07 | Data warehouse
-08 | Extract, transform & load
+08 | Extract, load & transform
 09 | Measure & hierarchy
 10 | Course review
 

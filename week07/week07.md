@@ -66,10 +66,10 @@ Note: A data warehouse is a database designed to support decision‑making in an
 - Data Source
 	- Internal and external
 
-- Data Staging / Cleansing ([ETL](https://en.wikipedia.org/wiki/Extract,_transform,_load) / [ELT](https://en.wikipedia.org/wiki/Extract,_load,_transform))
+- Data Staging / Cleansing ([ELT](https://en.wikipedia.org/wiki/Extract,_load,_transform) / [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_load))
 	- Data extraction
-	- Data transformation
 	- Data loading
+	- Data transformation
 
 - Data Repository
 	- Data warehouse
@@ -121,13 +121,13 @@ Note: A data warehouse is a database designed to support decision‑making in an
 
 ## Database vs data warehouse
 
-- Database
+- Database [(OLTP)](https://en.wikipedia.org/wiki/Online_transaction_processing)
 	- Design: highly normalised data model to reduce redundancy
 	- Time span: represents current transaction
 	- Granularity: represents specific transaction thats occur at a given time
 	- Dimensionality: focuses on representing atomic transaction
 
-- Data Warehouse
+- Data Warehouse [(OLAP)](https://en.wikipedia.org/wiki/Online_analytical_processing)
   - Design: denormalised dimensional model to optimise for read-intensive analytical queries
   - Time span: tends to cover long time frame
   - Granularity: presents at different levels of aggregation
@@ -227,7 +227,7 @@ Week | Lecture
 05 | Recap ✓
 06 | Test review ✓
 07 | Data warehouse ✓
-08 | Extract, transform & load
+08 | Extract, load & transform
 09 | Measure & hierarchy
 10 | Course review
 

@@ -18,7 +18,7 @@
 ## What is information management
 - Information management (IM) is the appropriate and optimised capture, storage, retrieval and use of information at a personal or organisational level
 
-- IM for organisations concerns a cycle of activity: the acquisition of information from one or more sources, the custodianship and the distribution of that information to those who need it, and its ultimate disposal through archiving or deletion
+- IM for organisations concerns a cycle of activity: 1) the acquisition of information from one or more sources, 2) the custodianship and the distribution of that information to those who need it, and 3) its ultimate disposal through archiving or deletion
 
 - It is closely related to, and overlaps with, the management of data, system, technology, process and where the availability of information is critical to organisational strategy and its success
 
@@ -307,7 +307,6 @@ WHERE ...
 ## 📚 Reading
 - Essential
 	- [The Worlds of Database Systems (p1-9)](http://infolab.stanford.edu/~ullman/fcdb/ch1.pdf)
-
 	- [Introduction from SQL for Web Nerds](http://philip.greenspun.com/sql/introduction.html)
 
 - Further
