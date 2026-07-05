@@ -160,15 +160,15 @@ WHERE prompt = 'Write a tagline for a course
 
 
 ## Beyond: DuckDB
-- [DuckDB](https://duckdb.org/) is a free, open-source analytical database that runs entirely on your laptop with no server required — similar to SQLite in that sense, but built for a different purpose
+- [DuckDB](https://duckdb.org/) is a free, open-source analytical database that runs entirely on your laptop with no server required; similar to SQLite in that sense but built for a different purpose
 
-- Where SQLite is optimised for transactional workloads (OLTP), DuckDB is optimised for analytical queries (OLAP). It stores data in a column-store format that makes aggregation over large datasets very fast
+- Where SQLite is optimised for transactional workloads (OLTP), DuckDB is optimised for analytical queries (OLAP). It stores data in a [column-store](https://en.wikipedia.org/wiki/Column_(data_store)) format that makes aggregation over large datasets very fast
 
 - It is not a replacement for SQLite; it is a complement. Think of SQLite as the right tool for the transactional foundation this course has built, and DuckDB as a natural next step if you need to run analytics at scale
 
 - DuckDB can also read CSV files directly without any import command, and it supports standard SQL
 
-📚 Further: [DuckDB documentation](https://duckdb.org/docs/stable/api/cli/overview)
+📚 Further: [DuckDB documentation](https://duckdb.org/docs)
 
 
 ## Beyond: DuckDB
