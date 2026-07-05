@@ -42,7 +42,6 @@ Note: Students could get support from Rohan Willis of the Business Communication
 - TUT1-4: due on Week 07 Thu 23:59 (10%)
 - Project Proposal: due on Week 08 Thu 23:59 (3%)
 - Project Report: due on Week 10 Thu 23:59 (27%)
-- 📢 There is no exam in this course
 
 
 
