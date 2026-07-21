@@ -18,10 +18,13 @@
 
 ## Theme
 - **Supporting a sustainable and equitable future through data-driven citizenship** is the overarching theme for the project, with a focus on sustainability and just, ethical and equitable society. This involves understanding how data can inform practice and policy for a better future, and you are encouraged to explore publicly accessible datasets that reveal societal dynamics, biases, and inequalities. For example, projects aligned with this theme might investigate how biases in data can lead to unintended consequence for certain minority groups and/or trends in sustainability
+<!-- .element: style="font-size:90%" -->
 
 - However, you may also choose to propose *any theme and topic that you and your group might find compelling to work on*, as long as they involve publicly accessible datasets and interesting questions that may lead us towards new insights. We will review this during the project proposal phase
+<!-- .element: style="font-size:90%" -->
 
-- Your project must integrate data from **at least three distinct publicly accessible datasets** of similar scope and complexity to the sample datasets provided below. The datasets should be related to a common theme and capable of being integrated into the data model to support your proposed research questions
+- Your project must integrate data from **at least three distinct publicly accessible datasets** of similar scope and complexity to the sample datasets provided. The datasets should be related to a common theme and capable of being integrated into the data model to support your proposed research questions
+<!-- .element: style="font-size:90%" -->
 
 
 
@@ -69,12 +72,14 @@
   - Use [draw.io](https://draw.io) (or [mermaid.js](https://mermaid.js.org)) to clearly illustrate the star schema
   - The star schema must have at least 3 dimension tables and 2 attribute hierarchies
   - Provide explanation on how the data from the chosen datasets relate to the star schema
+<!-- .element: style="font-size:90%" -->
 
 - ELT implementation in SQLite (8%)
   - Extract: Provide detail on how the data is extracted
   - Load: Describe and demonstrate the data import procedure involved to load data to SQLite
   - Transform: Explain and demonstrate transformation for the: i) fact table, ii) time dimension, iii) attribute hierarchy, and iv) all other relevant dimension and measure derived from the loaded data
   - You are expected to include all SQLite commands and SQL statements you have used
+<!-- .element: style="font-size:90%" -->
 
 
 ## Project report requirement
@@ -87,8 +92,7 @@
   - Suggest further work and improvement
 
 - Overall consideration (0.5%)
-  - The project has sufficient complexity and appeal
-  - The work submitted is professional, including formatting, grammar etc
+  - The project has sufficient complexity and appeal; it is professionally prepared and presented
 
 - Optional: Data visualisation (1% bonus)
   - Visualise insight with [python](https://colab.research.google.com/), [streamlit](https://streamlit.io/), [d3](https://d3js.org/), [mermaid](https://mermaid.js.org) or any other tool
