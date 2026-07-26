@@ -107,16 +107,19 @@
 
 ## Export to CSV in SQLite
 - In SQLite, the result of a SELECT statement could be shown in 14 different output modes: ```ascii, box, column, csv, html, insert, json, line, list, markdown, quote, table, tabs, tcl ```
+<!-- .element: style="font-size:90%" -->
 
 - Use the ```.mode``` command to switch between these output modes
-  - The default output mode is ```list``` with a default separator ```|``` to separate each column in a row; use the command ```.separator ","``` would change the separator to ```,```
+  - The default output mode is ```list``` with a default separator ```|``` to separate each column in a row; use the command ```.separator ,``` would change the separator to ```,```
   - We could also use the command ```.mode csv``` to change the output mode to csv
   - 🤔 What is the difference between these two approaches?
+<!-- .element: style="font-size:90%" -->
 
 - To export the result of a SQL statement to a CSV file
   - Add the header row to the output with the command ```.headers on```
   - Use ```.once file_name.csv``` to save the output to the file (or ```.once -x``` to save the output to a temporary file viewed by the default application)
   - Execute the SQL statement
+<!-- .element: style="font-size:90%" -->
 
 Note: The major difference between using list mode with comma as separator and the csv mode is that the csv mode applies text qualifier (i.e. a special character, usually the double quote) to enclose all text-based values, and that feature could be very important particularly if the values actually contain the comma characters among them; separator is also known as delimiter
 
