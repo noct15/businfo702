@@ -66,7 +66,7 @@ Week | Lecture
 
 - An open-source CLI to instantly query cloud APIs using SQL (the [installation](https://steampipe.io/downloads) could be a bit tricky; follow the instructions carefully)
 
-- Currently there are [140+ data sources / plugins](https://hub.steampipe.io/) available
+- Currently there are [150+ data sources / plugins](https://hub.steampipe.io/) available
 
 
 ## Example: Finance
@@ -86,21 +86,6 @@ LIMIT 7;
 ```
 
 
-## Example: X
-- Use SQL to query the recent tweet from [X](https://x.com) through Steampipe
-
-  - Apply for a [free developer account](https://developer.x.com) from X
-  - Install and configure the [plugin](https://hub.steampipe.io/plugins/turbot/twitter)
-  - Start a Steampipe session, check connection, inspect schema and table
-  - Write a SQL statement to list the recent tweets about Auckland
-
-```sql
-SELECT id, text, mentions
-FROM twitter_search_recent
-WHERE query = '#Auckland';
-```
-
-
 ## Example: Bluesky
 - Use SQL to query the recent message from [Bluesky](https://bsky.app) through Steampipe
 
@@ -114,7 +99,8 @@ SELECT author, created_at, like_count, text
 FROM bluesky_search_recent
 WHERE query IN ('New Zealand', 'NZ')
 AND like_count > 5
-ORDER BY like_count DESC;
+ORDER BY like_count DESC
+LIMIT 10;
 ```
 
 
@@ -160,7 +146,7 @@ WHERE prompt = 'Write a tagline for a course
 
 
 ## Beyond: DuckDB
-- [DuckDB](https://duckdb.org/) is a free, open-source analytical database that runs entirely on your laptop with no server required; similar to SQLite in that sense but built for a different purpose
+- [DuckDB](https://duckdb.org/) is an open source analytical database that runs entirely on your device with no setup; similar to SQLite but built for a different purpose
 
 - Where SQLite is optimised for transactional workloads (OLTP), DuckDB is optimised for analytical queries (OLAP). It stores data in a [column-store](https://en.wikipedia.org/wiki/Column_(data_store)) format that makes aggregation over large datasets very fast
 
@@ -168,23 +154,21 @@ WHERE prompt = 'Write a tagline for a course
 
 - DuckDB can also read CSV files directly without any import command, and it supports standard SQL
 
-📚 Further: [DuckDB documentation](https://duckdb.org/docs)
+- 📚 Further: [DuckDB documentation](https://duckdb.org/docs)
 
 
 ## Beyond: DuckDB
-- The same OLAP operations from week 09 become simpler in DuckDB. For example, roll-up:
+- The same OLAP operations (e.g. roll-up and pivot) from SQLite become simpler in DuckDB:
 
 ```sql
--- In SQLite: requires three CTEs and a UNION ALL to produce subtotals
--- In DuckDB: one clause does it all
+-- In SQLite: requires three CTEs and a UNION ALL
+-- In DuckDB: one ROLLUP clause does it all
 SELECT Year, Quarter, ROUND(SUM(DollarSold), 2) TotalSale
 FROM Sale s JOIN Time t ON s.TimeID = t.TimeID
 GROUP BY ROLLUP(Year, Quarter)
 ORDER BY Year NULLS LAST, Quarter NULLS LAST;
 ```
 <!-- .element: style="font-size:85%" -->
-
-- And pivot:
 
 ```sql
 -- In SQLite: requires a CASE WHEN column for every value
@@ -193,16 +177,16 @@ PIVOT (SELECT Country, Year, DollarSold FROM Sale s
        JOIN Customer c ON s.CustomerID = c.CustomerID
        JOIN Time t ON s.TimeID = t.TimeID)
 ON Year USING ROUND(SUM(DollarSold), 2)
-GROUP BY Country ORDER BY Country;
+GROUP BY Country 
+ORDER BY Country;
 ```
 <!-- .element: style="font-size:85%" -->
-
-- These are optional extensions to what you have learnt. DuckDB is not assessed in this course
 
 
 ## Beyond: More
 - Graph database: [Neo4j](https://neo4j.com/)
 - Vector database: [Chroma](https://www.trychroma.com/)
+- [Snowflake](https://www.snowflake.com/en/product/ai/) vs [Databricks](https://www.databricks.com/)
 
 
 
